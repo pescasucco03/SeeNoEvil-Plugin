@@ -27,19 +27,19 @@
         /// Gets a <see cref="UiuLeader"/> configs.
         /// </summary>
         [Description("Options for UIU Leader:")]
-        public UiuLeader UiuLeader { get; private set; } = new UiuLeader();
+        public SeeNoEvilLeader UiuLeader { get; private set; } = new SeeNoEvilLeader();
 
         /// <summary>
         /// Gets a <see cref="UiuAgent"/> configs.
         /// </summary>
         [Description("Options for UIU Agent:")]
-        public UiuAgent UiuAgent { get; private set; } = new UiuAgent();
+        public SeeNoEvilAgent UiuAgent { get; private set; } = new SeeNoEvilAgent();
 
         /// <summary>
-        /// Gets a <see cref="UiuSoldier"/> configs.
+        /// Gets a <see cref="SeeNoEvilSoldier"/> configs.
         /// </summary>
         [Description("Options for UIU Soldier:")]
-        public UiuSoldier UiuSoldier { get; private set; } = new UiuSoldier();
+        public SeeNoEvilSoldier SeeNoEvilSoldier { get; private set; } = new SeeNoEvilSoldier();
 
         /// <summary>
         /// Gets a <see cref="TeamColors"/> configs.

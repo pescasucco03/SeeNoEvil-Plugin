@@ -23,6 +23,6 @@
         /// Gets custom color for UIU units.
         /// </summary>
         [Description("Custom UIU color (leave empty for default color)")]
-        public string UiuUnitColor { get; private set; } = "yellow";
+        public string UiuUnitColor { get; private set; } = "00FFFF";
     }
 }

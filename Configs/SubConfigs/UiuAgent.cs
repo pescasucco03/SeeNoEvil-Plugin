@@ -7,13 +7,13 @@
     /// <summary>
     /// Configs for UIU Agent, equivalent of <see cref="RoleType.NtfSergeant"/>.
     /// </summary>
-    public class UiuAgent
+    public class SeeNoEvilAgent
     {
         /// <summary>
         /// Gets UIU Agent health.
         /// </summary>
         [Description("UIU Agent health.")]
-        public float Health { get; private set; } = 175f;
+        public float Health { get; private set; } = 140f;
 
         /// <summary>
         /// Gets UIU Agent inventory.
@@ -22,8 +22,7 @@
         public List<string> Inventory { get; private set; } = new List<string>
         {
             "KeycardNTFLieutenant",
-            "GunCrossvec",
-            "GunCOM18",
+            "GunE11SR",
             "Medkit",
             "Adrenaline",
             "Radio",
@@ -37,7 +36,7 @@
         [Description("UIU Agent ammo:")]
         public Dictionary<AmmoType, ushort> Ammo { get; private set; } = new Dictionary<AmmoType, ushort>
         {
-            { AmmoType.Nato556, 80 },
+            { AmmoType.Nato556, 120 },
             { AmmoType.Nato762, 0 },
             { AmmoType.Nato9, 100 },
         };
@@ -46,6 +45,6 @@
         /// Gets UIU Agent rank seen in-game instead of standard NTF role.
         /// </summary>
         [Description("UIU Agent rank seen in-game.")]
-        public string Rank { get; private set; } = "UIU Agent";
+        public string Rank { get; private set; } = "LogoTenenente SeeNoEvil";
     }
 }

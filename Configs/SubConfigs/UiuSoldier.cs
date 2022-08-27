@@ -7,13 +7,13 @@
     /// <summary>
     /// Configs for UIU Soldier, equivalent of <see cref="RoleType.NtfPrivate"/>.
     /// </summary>
-    public class UiuSoldier
+    public class SeeNoEvilSoldier
     {
         /// <summary>
         /// Gets UIU Soldier health.
         /// </summary>
         [Description("UIU Soldier health.")]
-        public float Health { get; private set; } = 160f;
+        public float Health { get; private set; } = 120f;
 
         /// <summary>
         /// Gets UIU Soldier inventory.
@@ -23,9 +23,7 @@
         {
             "KeycardNTFLieutenant",
             "GunCrossvec",
-            "GunCOM18",
             "Medkit",
-            "Adrenaline",
             "Radio",
             "GrenadeFrag",
             "ArmorCombat",
@@ -39,13 +37,13 @@
         {
             { AmmoType.Nato556, 80 },
             { AmmoType.Nato762, 0 },
-            { AmmoType.Nato9, 100 },
+            { AmmoType.Nato9, 120 },
         };
 
         /// <summary>
         /// Gets UIU Soldier rank seen in-game instead of standard NTF role.
         /// </summary>
         [Description("UIU Soldier rank seen in-game.")]
-        public string Rank { get; private set; } = "UIU Soldier";
+        public string Rank { get; private set; } = "Soldato SeeNoEvil";
     }
 }

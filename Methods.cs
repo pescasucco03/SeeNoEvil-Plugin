@@ -57,16 +57,16 @@
                                 player.Role.Type = RoleType.NtfPrivate;
                             }
 
-                            player.Health = Config.UiuSoldier.Health;
+                            player.Health = Config.SeeNoEvilSoldier.Health;
 
-                            player.ResetInventory(Config.UiuSoldier.Inventory);
+                            player.ResetInventory(Config.SeeNoEvilSoldier.Inventory);
 
-                            foreach (var ammo in Config.UiuSoldier.Ammo)
+                            foreach (var ammo in Config.SeeNoEvilSoldier.Ammo)
                             {
                                 player.SetAmmo(ammo.Key, ammo.Value);
                             }
 
-                            player.CustomInfo = $"{player.Nickname}\n{Config.UiuSoldier.Rank}";
+                            player.CustomInfo = $"{player.Nickname}\n{Config.SeeNoEvilSoldier.Rank}";
                             break;
                         }
 

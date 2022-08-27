@@ -59,13 +59,13 @@
         }
 
         /// <inheritdoc/>
-        public override string Name { get; } = "UIURescueSquad";
+        public override string Name { get; } = "SeeNoEvil";
 
         /// <inheritdoc/>
         public override string Author { get; } = "JesusQC, Michal78900, maintained by Marco15453";
 
         /// <inheritdoc/>
-        public override string Prefix { get; } = "UIURescueSquad";
+        public override string Prefix { get; } = "SeeNoEvil";
 
         /// <inheritdoc/>
         public override Version Version { get; } = new Version(3, 3, 0);

@@ -12,13 +12,13 @@
         /// Gets the number of respawn waves which must occur before considering UIU to spawn.
         /// </summary>
         [Description("How many mtfs respawns must have happened to spawn UIU")]
-        public int Respawns { get; private set; } = 1;
+        public int Respawns { get; private set; } = 3;
 
         /// <summary>
         /// Gets the chance for UIU to spawn instead of NTF.
         /// </summary>
         [Description("Probability of a UIU Squad replacing a MTF spawn")]
-        public int Probability { get; private set; } = 50;
+        public int Probability { get; private set; } = 80;
 
         /// <summary>
         /// Gets the maximum size of a UIU squad.
@@ -36,24 +36,24 @@
         /// Gets the UIU announcement message.
         /// </summary>
         [Description("Entrance broadcast announcement message (null to disable it)")]
-        public string AnnouncementText { get; private set; } = string.Empty;
+        public string AnnouncementText { get; private set; } = "Sei un SeeNoEvil, il tuo compito è quello di ricontenere gli SCP più pericolosi della struttura";
 
         /// <summary>
         /// Gets the UIU announcement message display time.
         /// </summary>
         [Description("Entrance broadcast announcement message time")]
-        public ushort AnnouncementTime { get; private set; } = 10;
+        public ushort AnnouncementTime { get; private set; } = 12;
 
         /// <summary>
         /// Gets the UIU Cassie entrance message.
         /// </summary>
         [Description("UIU entrance Cassie Message")]
-        public string UiuAnnouncementCassie { get; private set; } = "The U I U Squad designated {designation} HasEntered AwaitingRecontainment {scpnum}";
+        public string UiuAnnouncementCassie { get; private set; } = "MTFUnit .g4 pitch_1.02 ETA jam_030_3 10 designated {designation} HasEntered allremaining AwaitingRecontainment {scpnum} SCPSubject\n";
 
         /// <summary>
         /// Gets the UIU Cassie entrance message, when there aren't any SCPs.
         /// </summary>
-        public string UiuAnnouncmentCassieNoScp { get; private set; } = "The U I U Squad designated {designation} HasEntered NoSCPsLeft";
+        public string UiuAnnouncmentCassieNoScp { get; private set; } = "MTFUnit .g4 pitch_1.02 ETA jam_030_3 10 designated {designation} HasEntered NoSCPsLeft";
 
         /// <summary>
         /// Gets the custom NTF Cassie entrance message.
@@ -88,12 +88,12 @@
         /// Gets an UIU spawn broadcast.
         /// </summary>
         [Description("UIU Player broadcast (null to disable it)")]
-        public string UiuBroadcast { get; private set; } = "<i>You are an</i><color=yellow><b> UIU trooper</b></color>, <i>help </i><color=#0377fc><b>MTFs</b></color><i> to finish its job</i>";
+        public string UiuBroadcast { get; private set; } = "<i>Sei un</i><color=yellow><b>SeeNoEvil</b></color>, <i>Aiuta gli </i><color=#0377fc><b>MTFs</b></color><i> a ricontenere gli</b></color><i>SCP più pericolosi.</i>";
 
         /// <summary>
         /// Gets an UIU spawn broadcast time.
         /// </summary>
         [Description("UIU Player broadcast time")]
-        public ushort UiuBroadcastTime { get; private set; } = 10;
+        public ushort UiuBroadcastTime { get; private set; } = 12;
     }
 }
