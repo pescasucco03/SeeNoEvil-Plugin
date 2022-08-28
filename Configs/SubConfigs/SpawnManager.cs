@@ -12,7 +12,7 @@
         /// Gets the number of respawn waves which must occur before considering UIU to spawn.
         /// </summary>
         [Description("How many mtfs respawns must have happened to spawn UIU")]
-        public int Respawns { get; private set; } = 3;
+        public int Respawns { get; private set; } = 1;
 
         /// <summary>
         /// Gets the chance for UIU to spawn instead of NTF.
@@ -24,7 +24,7 @@
         /// Gets the maximum size of a UIU squad.
         /// </summary>
         [Description("The maximum size of a UIU squad")]
-        public uint MaxSquad { get; private set; } = 8;
+        public uint MaxSquad { get; private set; } = 1;
 
         /// <summary>
         /// Gets the UIU spawn position.
