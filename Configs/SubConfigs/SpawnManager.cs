@@ -36,7 +36,7 @@
         /// Gets the UIU announcement message.
         /// </summary>
         [Description("Entrance broadcast announcement message (null to disable it)")]
-        public string AnnouncementText { get; private set; } = "Sei un SeeNoEvil, il tuo compito è quello di ricontenere gli SCP più pericolosi della struttura";
+        public string AnnouncementText { get; private set; } = "bcmono 15 <i> <color=red> Sei un SeeNoEvil, il tuo compito è quello di ricontenere gli SCP più pericolosi della struttura </color> </i>";
 
         /// <summary>
         /// Gets the UIU announcement message display time.
@@ -53,7 +53,7 @@
         /// <summary>
         /// Gets the UIU Cassie entrance message, when there aren't any SCPs.
         /// </summary>
-        public string UiuAnnouncmentCassieNoScp { get; private set; } = "MTFUnit .g4 pitch_1.02 ETA jam_030_3 10 designated {designation} HasEntered NoSCPsLeft";
+        public string UiuAnnouncmentCassieNoScp { get; private set; } = "MTFUnit .g4 pitch_1.02 ETA jam_030_3 10 designated {designation} HasEntered allremaining NoSCPsLeft";
 
         /// <summary>
         /// Gets the custom NTF Cassie entrance message.

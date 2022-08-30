@@ -21,9 +21,9 @@
         [Description("UIU Leader inventory:")]
         public List<string> Inventory { get; private set; } = new List<string>
         {
-            "KeycardNTFLieutenant",
+            "KeycardNTFCommander",
             "GunE11SR",
-            "GunCOM18",
+            "GunFSP9",
             "Medkit",
             "Adrenaline",
             "Radio",
