@@ -20,7 +20,7 @@
         public string[] Aliases { get; } = { "st" };
 
         /// <inheritdoc/>
-        public string Description { get; } = "Spawns UIU team.";
+        public string Description { get; } = "Spawns SeeNoEvil team.";
 
         /// <inheritdoc/>
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
@@ -48,12 +48,12 @@
                         Respawn.ForceWave(SpawnableTeamType.NineTailedFox);
                         EventHandlers.IsSpawnable = false;
 
-                        response = $"UIU Rescue Squad team has been successfully spawned with {maxSquad} players!";
+                        response = $"SeeNoEvil team has been successfully spawned with {maxSquad} players!";
                         return true;
                     }
                     else
                     {
-                        response = $"There is not enough Spectators to spawn UIU Rescue Squad with {maxSquad} players. Required {maxSquad - validPlayers} more.";
+                        response = $"There is not enough Spectators to spawn SeeNoEvil with {maxSquad} players. Required {maxSquad - validPlayers} more.";
                         return false;
                     }
                 }
@@ -77,12 +77,12 @@
                         EventHandlers.IsSpawnable = false;
                         EventHandlers.MaxPlayers = prevValue;
 
-                        response = $"UIU Rescue Squad team with {num} players has been spawned.";
+                        response = $"SeeNoEvil team with {num} players has been spawned.";
                         return true;
                     }
                     else
                     {
-                        response = $"There is not enough Spectators to spawn UIU Rescue Squad with {num} players. Required {num - validPlayers} more.";
+                        response = $"There is not enough Spectators to spawn SeeNoEvil with {num} players. Required {num - validPlayers} more.";
                         return false;
                     }
                 }

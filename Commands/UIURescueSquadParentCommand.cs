@@ -20,13 +20,13 @@
         public UIURescueSquadParentCommand() => LoadGeneratedCommands();
 
         /// <inheritdoc/>
-        public override string Command => "uiu";
+        public override string Command => "SNE";
 
         /// <inheritdoc/>
         public override string[] Aliases => Array.Empty<string>();
 
         /// <inheritdoc/>
-        public override string Description => "Parent command for UIURescueSquad";
+        public override string Description => "Parent command for SeeNoEvil";
 
         /// <inheritdoc/>
         public override void LoadGeneratedCommands()

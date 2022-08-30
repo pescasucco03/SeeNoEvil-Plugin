@@ -36,7 +36,7 @@
         /// Gets the UIU announcement message.
         /// </summary>
         [Description("Entrance broadcast announcement message (null to disable it)")]
-        public string AnnouncementText { get; private set; } = "bcmono 15 <i> <color=red> Sei un SeeNoEvil, il tuo compito è quello di ricontenere gli SCP più pericolosi della struttura </color> </i>";
+        public string AnnouncementText { get; private set; } = "<i> <color=red> Sei un SeeNoEvil, il tuo compito è quello di ricontenere gli SCP più pericolosi della struttura </color> </i>";
 
         /// <summary>
         /// Gets the UIU announcement message display time.
